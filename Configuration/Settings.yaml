@@ -43,16 +43,3 @@ Flowpack:
     # Debugging flag adds additional logging to System.log to debug server-side CORS issues.
     #
     debug: false
-
-Neos:
-  Flow:
-
-    http:
-      chain:
-
-        'preprocess':
-          chain:
-
-            'flowpackCors':
-              position: 'end'
-              component: 'Flowpack\Cors\Http\Component\CorsComponent'

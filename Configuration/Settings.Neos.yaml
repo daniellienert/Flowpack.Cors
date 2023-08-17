@@ -1,0 +1,7 @@
+Neos:
+  Flow:
+    http:
+      middlewares:
+        'Flowpack.Cors.AddHeader':
+          position: 'end'
+          middleware: 'Flowpack\Cors\Http\Middleware\CorsMiddleware'
